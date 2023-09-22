@@ -8,17 +8,31 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+DESTDIR = ./bin
+
+
+INCLUDEPATH += ./headers \
+        ./headers/math \
+        ./headers/graphics \
+        ./headers/widget \
+        ./headers/scene
+
+
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp \
-    object.cpp
+    src/graphics/graphic.cpp \
+    src/math/castommath.cpp \
+    src/main.cpp \
+    src/widget/mainwindow.cpp \
+    src/scene/object.cpp
 
 HEADERS += \
-    mainwindow.h \
-    object.h
+    headers/math/castommath.h \
+    headers/widget/mainwindow.h \
+    headers/scene/object.h \
+    headers/graphics/graphic.h
 
 FORMS += \
-    mainwindow.ui
+    forms/mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

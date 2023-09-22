@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[])
 {
-    QDebug () << "hello";
+    qDebug ( ) << " Hello, " << " this is debug output ";
 
     QApplication a(argc, argv);
     MainWindow w;

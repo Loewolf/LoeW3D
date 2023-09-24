@@ -19,9 +19,11 @@ INCLUDEPATH += ./headers \
 
 
 SOURCES += \
+    src/main.cpp \
     src/graphics/graphic.cpp \
     src/math/castommath.cpp \
-    src/main.cpp \
+    src/scene/drawableobject.cpp \
+    src/widget/graphicwidget.cpp \
     src/widget/mainwindow.cpp \
     src/scene/object.cpp
 
@@ -29,7 +31,9 @@ HEADERS += \
     headers/math/castommath.h \
     headers/widget/mainwindow.h \
     headers/scene/object.h \
-    headers/graphics/graphic.h
+    headers/graphics/graphic.h \
+    headers/scene/drawableobject.h \
+    headers/widget/graphicwidget.h
 
 FORMS += \
     forms/mainwindow.ui
